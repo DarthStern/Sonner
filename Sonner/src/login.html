@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <title>Inicia Sesión</title>
+    
+        <!-- TAILWINDCSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css"  rel="stylesheet" />
+
+  </head>
+  <body class="bg-gray-900">
+    <img
+      src="../images/login/wave.png"
+      class="fixed hidden lg:block inset-0 h-full"
+      style="z-index: -1;"
+    />
+    <div
+      class="w-screen h-screen flex flex-col justify-center items-center lg:grid lg:grid-cols-2"
+    >
+      <img
+        src="../images/login/unlock.svg"
+        class="hidden lg:block w-1/2 hover:scale-150 transition-all duration-500 transform mx-auto"
+      />
+      <form class="flex flex-col justify-center items-center w-1/2">
+        <img src="../images/login/avatar.svg" class="w-32" />
+        <h2
+          class="my-8 font-display font-bold text-3xl text-white text-center"
+        >
+          Bienvenido de vuelta
+        </h2>
+        <div>
+            <label for="user-name" class="block mb-2 text-sm font-medium text-white">Usuario</label>
+            <input type="text" id="user-name" class="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nombre de Usuario" required>
+        </div>
+        <div class="mb-6 py-2">
+            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Contraseña</label>
+            <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="•••••••••" required>
+        </div> 
+        <a href="https://youtu.be/eY52Zsg-KVI" class="self-center mt-4 text-gray-600 font-bold"
+          >¿Olvido su contraseña?</a
+        >
+        <a
+          href="../index.html"
+          class="py-3 px-20 bg-white rounded-full text-gray-900 font-bold uppercase text-lg mt-4 transform hover:translate-y-1 transition-all duration-500"
+          >Inicia Sesión</a
+        >
+      </form>
+    </div>
+  </body>
+</html>
